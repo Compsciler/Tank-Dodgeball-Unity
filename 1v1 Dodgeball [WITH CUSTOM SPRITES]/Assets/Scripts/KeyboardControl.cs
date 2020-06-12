@@ -19,6 +19,7 @@ public class KeyboardControl : MonoBehaviour
     void Start()
     {
         ammo_collection = GetComponent<AmmoCollection>();
+        health_display = GetComponent<HealthDisplay>();
     }
 
     // Update is called once per frame

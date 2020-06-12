@@ -17,6 +17,7 @@ public class MouseControl : MonoBehaviour
     private void Start()
     {
         ammo_collection = GetComponent<AmmoCollection>();
+        health_display = GetComponent<HealthDisplay>();
     }
     void Update()
     {

@@ -15,6 +15,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: RedBullet
       objectReference: {fileID: 0}
+    - target: {fileID: 58853339414805048, guid: b78ba81aa81503f48980ee1a4f6d55aa,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4602124645498802, guid: b78ba81aa81503f48980ee1a4f6d55aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
