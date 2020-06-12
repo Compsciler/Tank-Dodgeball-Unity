@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class BulletMovement : NetworkBehaviour  // Maybe merge with Player scripts
+public class BulletMovement : MonoBehaviour  // Maybe merge with Player scripts  // This changed to NetworkBehaviour somehow
 {
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
 
     void Update()
     {
+        /*
         if (!isLocalPlayer)
         {
             return;
         }
+        */
 
         var x = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
         var z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
@@ -42,8 +44,10 @@ public class BulletMovement : NetworkBehaviour  // Maybe merge with Player scrip
         // Destroy(bullet, 2.0f);
     }
 
+    /*
     public override void OnStartLocalPlayer()
     {
         GetComponent<MeshRenderer>().material.color = Color.blue;
     }
+    */
 }

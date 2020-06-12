@@ -11,13 +11,13 @@ public class HealthDisplay : MonoBehaviour {
     public Text display;
 
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.gameObject.tag == bulletTag)
+        if (collision.gameObject.tag == bulletTag)
         {
             health -= 1;
             // transform.localScale += new Vector3(increaseSize, increaseSize, increaseSize);
-            Destroy(other.gameObject);
+            Destroy(collision.gameObject);
 
             if (health == 0)
             {
